@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>DomotiCore – Veltrix</title>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/public/styles/styles.css">
+<link rel="stylesheet" href="public/styles/styles.css">
 </head>
 <body>
 
@@ -13,21 +13,26 @@
 <nav>
   <div class="logo"><span>Domo</span>tiCore</div>
   <ul class="nav-links" id="navLinks">
-    <li><a href="#nosotros"   data-i18n="nav.about"></a></li>
-    <li><a href="#funciones"  data-i18n="nav.features"></a></li>
+    <li><a href="#nosotros" data-i18n="nav.about"></a></li>
+    <li><a href="#funciones" data-i18n="nav.features"></a></li>
     <li><a href="#plataforma" data-i18n="nav.platform"></a></li>
     <li><a href="#comofunciona" data-i18n="nav.how"></a></li>
-    <li><a href="#contacto"   data-i18n="nav.contact"></a></li>
+    <li><a href="#contacto" data-i18n="nav.contact"></a></li>
   </ul>
+
   <div class="nav-right">
     <div class="lang-switcher">
       <button class="lang-btn active" data-lang="es" title="Español">🇵🇪 ES</button>
-      <button class="lang-btn"        data-lang="en" title="English">🇺🇸 EN</button>
+      <button class="lang-btn" data-lang="en" title="English">🇺🇸 EN</button>
     </div>
+
     <a href="#contacto" class="nav-cta" data-i18n="nav.cta"></a>
   </div>
+
   <button class="hamburger" id="hamburger" aria-label="Menú">
-    <span></span><span></span><span></span>
+    <span></span>
+    <span></span>
+    <span></span>
   </button>
 </nav>
 
@@ -36,56 +41,92 @@
   <div class="hero-dots"></div>
   <div class="hero-blob"></div>
   <div class="hero-blob2"></div>
+
   <div class="badge">
     <div class="badge-dot"></div>
     <span data-i18n="hero.badge"></span>
   </div>
+
   <h1 data-i18n-html="hero.title"></h1>
+
   <p class="hero-sub" data-i18n="hero.sub"></p>
+
   <div class="hero-btns">
     <a href="#plataforma" class="btn-primary" data-i18n="hero.btnPrimary"></a>
     <a href="#comofunciona" class="btn-ghost" data-i18n="hero.btnGhost"></a>
   </div>
+
   <div class="hero-stats">
-    <div><div class="stat-num">50+</div><div class="stat-lbl" data-i18n="hero.stat1"></div></div>
-    <div><div class="stat-num">100%</div><div class="stat-lbl" data-i18n="hero.stat2"></div></div>
-    <div><div class="stat-num">30%</div><div class="stat-lbl" data-i18n="hero.stat3"></div></div>
+    <div>
+      <div class="stat-num">50+</div>
+      <div class="stat-lbl" data-i18n="hero.stat1"></div>
+    </div>
+
+    <div>
+      <div class="stat-num">100%</div>
+      <div class="stat-lbl" data-i18n="hero.stat2"></div>
+    </div>
+
+    <div>
+      <div class="stat-num">30%</div>
+      <div class="stat-lbl" data-i18n="hero.stat3"></div>
+    </div>
   </div>
 </section>
 
 <!-- ── NOSOTROS ── -->
 <section class="about" id="nosotros">
   <div class="container">
+
     <div class="about-grid">
+
       <div class="about-text">
         <div class="section-tag" data-i18n="about.tag"></div>
+
         <h2 class="section-title" data-i18n="about.title"></h2>
+
         <p data-i18n="about.p1"></p>
-        <p style="margin-top:0.8rem;" data-i18n="about.p2"></p>
+
+        <p class="mt-sm" data-i18n="about.p2"></p>
+
         <div class="upc-badge" data-i18n="about.upc"></div>
       </div>
+
       <div class="about-cards">
+
         <div class="about-card">
-          <div class="about-icon">🎯</div>
+          <div class="about-icon">
+            <img src="/public/images/icons/objetcive.png" alt="Objetivo" class="icon-img">
+          </div>
+
           <div>
             <h4 data-i18n="about.card1.title"></h4>
             <p data-i18n="about.card1.text"></p>
           </div>
         </div>
+
         <div class="about-card">
-          <div class="about-icon">💡</div>
+          <div class="about-icon">
+            <img src="public/images/icons/innovation.png" alt="Innovación" class="icon-img">
+          </div>
+
           <div>
             <h4 data-i18n="about.card2.title"></h4>
             <p data-i18n="about.card2.text"></p>
           </div>
         </div>
+
         <div class="about-card">
-          <div class="about-icon">🌱</div>
+          <div class="about-icon">
+            <img src="public/images/icons/sustainability.png" alt="Sostenibilidad" class="icon-img">
+          </div>
+
           <div>
             <h4 data-i18n="about.card3.title"></h4>
             <p data-i18n="about.card3.text"></p>
           </div>
         </div>
+
       </div>
     </div>
   </div>
@@ -94,18 +135,71 @@
 <!-- ── FUNCIONES ── -->
 <section class="features" id="funciones">
   <div class="container">
-    <div style="max-width:520px;">
+
+    <div class="section-intro">
       <div class="section-tag" data-i18n="features.tag"></div>
+
       <h2 class="section-title" data-i18n="features.title"></h2>
+
       <p class="section-sub" data-i18n="features.sub"></p>
     </div>
+
     <div class="features-grid">
-      <div class="feat-card"><div class="feat-icon">⚡</div><h3 data-i18n="features.f1.title"></h3><p data-i18n="features.f1.text"></p></div>
-      <div class="feat-card"><div class="feat-icon">🕐</div><h3 data-i18n="features.f2.title"></h3><p data-i18n="features.f2.text"></p></div>
-      <div class="feat-card"><div class="feat-icon">📊</div><h3 data-i18n="features.f3.title"></h3><p data-i18n="features.f3.text"></p></div>
-      <div class="feat-card"><div class="feat-icon">🔔</div><h3 data-i18n="features.f4.title"></h3><p data-i18n="features.f4.text"></p></div>
-      <div class="feat-card"><div class="feat-icon">🎬</div><h3 data-i18n="features.f5.title"></h3><p data-i18n="features.f5.text"></p></div>
-      <div class="feat-card"><div class="feat-icon">🔒</div><h3 data-i18n="features.f6.title"></h3><p data-i18n="features.f6.text"></p></div>
+
+      <div class="feat-card">
+        <div class="feat-icon">
+          <img src="public/images/icons/remote.png" alt="Automatización" class="icon-img">
+        </div>
+
+        <h3 data-i18n="features.f1.title"></h3>
+        <p data-i18n="features.f1.text"></p>
+      </div>
+
+      <div class="feat-card">
+        <div class="feat-icon">
+          <img src="public/images/icons/calendary.png" alt="Programación" class="icon-img">
+        </div>
+
+        <h3 data-i18n="features.f2.title"></h3>
+        <p data-i18n="features.f2.text"></p>
+      </div>
+
+      <div class="feat-card">
+        <div class="feat-icon">
+          <img src="public/images/icons/monitoring.png" alt="Análisis" class="icon-img">
+        </div>
+
+        <h3 data-i18n="features.f3.title"></h3>
+        <p data-i18n="features.f3.text"></p>
+      </div>
+
+      <div class="feat-card">
+        <div class="feat-icon">
+          <img src="public/images/icons/notification.png" alt="Alertas" class="icon-img">
+        </div>
+
+        <h3 data-i18n="features.f4.title"></h3>
+        <p data-i18n="features.f4.text"></p>
+      </div>
+
+      <div class="feat-card">
+        <div class="feat-icon">
+          <img src="public/images/icons/scenes.png" alt="Escenas" class="icon-img">
+        </div>
+
+        <h3 data-i18n="features.f5.title"></h3>
+        <p data-i18n="features.f5.text"></p>
+      </div>
+
+      <div class="feat-card">
+        <div class="feat-icon">
+          <img src="public/images/icons/security.png" alt="Seguridad" class="icon-img">
+        </div>
+
+        <h3 data-i18n="features.f6.title"></h3>
+        <p data-i18n="features.f6.text"></p>
+      </div>
+
     </div>
   </div>
 </section>
@@ -113,39 +207,138 @@
 <!-- ── PREVIEW ── -->
 <section class="preview" id="plataforma">
   <div class="container">
+
     <div class="section-tag" data-i18n="preview.tag"></div>
+
     <h2 class="section-title" data-i18n="preview.title"></h2>
+
     <p class="section-sub" data-i18n="preview.sub"></p>
+
     <div class="preview-box">
+
       <div class="preview-bar">
-        <div class="dot d-r"></div><div class="dot d-y"></div><div class="dot d-g"></div>
-        <div class="preview-url">domoticore.veltrix.pe/dashboard</div>
+        <div class="dot d-r"></div>
+        <div class="dot d-y"></div>
+        <div class="dot d-g"></div>
+
+        <div class="preview-url">
+          domoticore.veltrix.pe/dashboard
+        </div>
       </div>
+
       <div class="preview-inner">
+
         <div class="sidebar">
           <div class="sb-label" data-i18n="dash.general"></div>
-          <div class="sb-item active"><div class="sb-dot"></div> <span data-i18n="dash.dashboard"></span></div>
-          <div class="sb-item"><div class="sb-dot"></div> <span data-i18n="dash.devices"></span></div>
-          <div class="sb-item"><div class="sb-dot"></div> <span data-i18n="dash.automations"></span></div>
-          <div class="sb-label" data-i18n="dash.analysis"></div>
-          <div class="sb-item"><div class="sb-dot"></div> <span data-i18n="dash.energy"></span></div>
-          <div class="sb-item"><div class="sb-dot"></div> <span data-i18n="dash.alerts"></span></div>
-          <div class="sb-item"><div class="sb-dot"></div> <span data-i18n="dash.reports"></span></div>
-          <div class="sb-label" data-i18n="dash.config"></div>
-          <div class="sb-item"><div class="sb-dot"></div> <span data-i18n="dash.users"></span></div>
-        </div>
-        <div class="dash-main">
-          <div class="dash-cards">
-            <div class="dc dc-green"><div class="dc-lbl" data-i18n="dash.card1.lbl"></div><div class="dc-val">12</div></div>
-            <div class="dc">           <div class="dc-lbl" data-i18n="dash.card2.lbl"></div><div class="dc-val">5</div></div>
-            <div class="dc dc-amber">  <div class="dc-lbl" data-i18n="dash.card3.lbl"></div><div class="dc-val">3.4 kW</div></div>
-            <div class="dc dc-red">    <div class="dc-lbl" data-i18n="dash.card4.lbl"></div><div class="dc-val">2</div></div>
+
+          <div class="sb-item active">
+            <div class="sb-dot"></div>
+            <span data-i18n="dash.dashboard"></span>
           </div>
+
+          <div class="sb-item">
+            <div class="sb-dot"></div>
+            <span data-i18n="dash.devices"></span>
+          </div>
+
+          <div class="sb-item">
+            <div class="sb-dot"></div>
+            <span data-i18n="dash.automations"></span>
+          </div>
+
+          <div class="sb-label" data-i18n="dash.analysis"></div>
+
+          <div class="sb-item">
+            <div class="sb-dot"></div>
+            <span data-i18n="dash.energy"></span>
+          </div>
+
+          <div class="sb-item">
+            <div class="sb-dot"></div>
+            <span data-i18n="dash.alerts"></span>
+          </div>
+
+          <div class="sb-item">
+            <div class="sb-dot"></div>
+            <span data-i18n="dash.reports"></span>
+          </div>
+
+          <div class="sb-label" data-i18n="dash.config"></div>
+
+          <div class="sb-item">
+            <div class="sb-dot"></div>
+            <span data-i18n="dash.users"></span>
+          </div>
+        </div>
+
+        <div class="dash-main">
+
+          <div class="dash-cards">
+
+            <div class="dc dc-green">
+              <div class="dc-lbl" data-i18n="dash.card1.lbl"></div>
+              <div class="dc-val">12</div>
+            </div>
+
+            <div class="dc">
+              <div class="dc-lbl" data-i18n="dash.card2.lbl"></div>
+              <div class="dc-val">5</div>
+            </div>
+
+            <div class="dc dc-amber">
+              <div class="dc-lbl" data-i18n="dash.card3.lbl"></div>
+              <div class="dc-val">3.4 kW</div>
+            </div>
+
+            <div class="dc dc-red">
+              <div class="dc-lbl" data-i18n="dash.card4.lbl"></div>
+              <div class="dc-val">2</div>
+            </div>
+
+          </div>
+
           <div class="device-list">
-            <div class="dev-row"><div class="dev-name">💡 <span data-i18n="dash.dev1"></span> <span class="dev-badge on" data-i18n="dash.online"></span></div><button class="toggle ton"></button></div>
-            <div class="dev-row"><div class="dev-name">🖥️ <span data-i18n="dash.dev2"></span> <span class="dev-badge on" data-i18n="dash.online"></span></div><button class="toggle ton"></button></div>
-            <div class="dev-row"><div class="dev-name">❄️ <span data-i18n="dash.dev3"></span> <span class="dev-badge off" data-i18n="dash.offline"></span></div><button class="toggle toff"></button></div>
-            <div class="dev-row"><div class="dev-name">💡 <span data-i18n="dash.dev4"></span> <span class="dev-badge on" data-i18n="dash.online"></span></div><button class="toggle ton"></button></div>
+
+            <div class="dev-row">
+              <div class="dev-name">
+                <img src="public/images/icons/light.png" alt="Luz" class="device-icon">
+                <span data-i18n="dash.dev1"></span>
+                <span class="dev-badge on" data-i18n="dash.online"></span>
+              </div>
+
+              <button class="toggle ton"></button>
+            </div>
+
+            <div class="dev-row">
+              <div class="dev-name">
+                <img src="public/images/icons/computer.png" alt="Monitor" class="device-icon">
+                <span data-i18n="dash.dev2"></span>
+                <span class="dev-badge on" data-i18n="dash.online"></span>
+              </div>
+
+              <button class="toggle ton"></button>
+            </div>
+
+            <div class="dev-row">
+              <div class="dev-name">
+                <img src="public/images/icons/offline.png" alt="Aire" class="device-icon">
+                <span data-i18n="dash.dev3"></span>
+                <span class="dev-badge off" data-i18n="dash.offline"></span>
+              </div>
+
+              <button class="toggle toff"></button>
+            </div>
+
+            <div class="dev-row">
+              <div class="dev-name">
+                <img src="public/images/icons/light.png" alt="Luz" class="device-icon">
+                <span data-i18n="dash.dev4"></span>
+                <span class="dev-badge on" data-i18n="dash.online"></span>
+              </div>
+
+              <button class="toggle ton"></button>
+            </div>
+
           </div>
         </div>
       </div>
@@ -155,15 +348,40 @@
 
 <!-- ── CÓMO FUNCIONA ── -->
 <section class="howto" id="comofunciona">
-  <div class="container" style="text-align:center;">
+  <div class="container text-center">
+
     <div class="section-tag" data-i18n="how.tag"></div>
+
     <h2 class="section-title" data-i18n="how.title"></h2>
-    <p class="section-sub" style="margin:0 auto;" data-i18n="how.sub"></p>
+
+    <p class="section-sub section-sub--center" data-i18n="how.sub"></p>
+
     <div class="steps">
-      <div class="step"><div class="step-num">1</div><h4 data-i18n="how.s1.title"></h4><p data-i18n="how.s1.text"></p></div>
-      <div class="step"><div class="step-num">2</div><h4 data-i18n="how.s2.title"></h4><p data-i18n="how.s2.text"></p></div>
-      <div class="step"><div class="step-num">3</div><h4 data-i18n="how.s3.title"></h4><p data-i18n="how.s3.text"></p></div>
-      <div class="step"><div class="step-num">4</div><h4 data-i18n="how.s4.title"></h4><p data-i18n="how.s4.text"></p></div>
+
+      <div class="step">
+        <div class="step-num">1</div>
+        <h4 data-i18n="how.s1.title"></h4>
+        <p data-i18n="how.s1.text"></p>
+      </div>
+
+      <div class="step">
+        <div class="step-num">2</div>
+        <h4 data-i18n="how.s2.title"></h4>
+        <p data-i18n="how.s2.text"></p>
+      </div>
+
+      <div class="step">
+        <div class="step-num">3</div>
+        <h4 data-i18n="how.s3.title"></h4>
+        <p data-i18n="how.s3.text"></p>
+      </div>
+
+      <div class="step">
+        <div class="step-num">4</div>
+        <h4 data-i18n="how.s4.title"></h4>
+        <p data-i18n="how.s4.text"></p>
+      </div>
+
     </div>
   </div>
 </section>
@@ -171,88 +389,154 @@
 <!-- ── TESTIMONIOS ── -->
 <section class="testimonials" id="testimonios">
   <div class="container">
+
     <div class="section-tag" data-i18n="test.tag"></div>
+
     <h2 class="section-title" data-i18n="test.title"></h2>
+
     <div class="test-grid" id="testGrid">
+
       <div class="test-card">
         <div class="test-stars">★★★★★</div>
+
         <p class="test-quote" data-i18n="test.t1.quote"></p>
+
         <div class="test-author">
           <div class="test-av">CM</div>
-          <div><div class="test-name">Carlos Mendoza</div><div class="test-role" data-i18n="test.t1.role"></div></div>
+
+          <div>
+            <div class="test-name">Carlos Mendoza</div>
+            <div class="test-role" data-i18n="test.t1.role"></div>
+          </div>
         </div>
       </div>
+
       <div class="test-card">
         <div class="test-stars">★★★★★</div>
+
         <p class="test-quote" data-i18n="test.t2.quote"></p>
+
         <div class="test-author">
           <div class="test-av">SR</div>
-          <div><div class="test-name">Sandra Ríos</div><div class="test-role" data-i18n="test.t2.role"></div></div>
+
+          <div>
+            <div class="test-name">Sandra Ríos</div>
+            <div class="test-role" data-i18n="test.t2.role"></div>
+          </div>
         </div>
       </div>
+
       <div class="test-card">
         <div class="test-stars">★★★★☆</div>
+
         <p class="test-quote" data-i18n="test.t3.quote"></p>
+
         <div class="test-author">
           <div class="test-av">JP</div>
-          <div><div class="test-name">Jorge Paredes</div><div class="test-role" data-i18n="test.t3.role"></div></div>
+
+          <div>
+            <div class="test-name">Jorge Paredes</div>
+            <div class="test-role" data-i18n="test.t3.role"></div>
+          </div>
         </div>
       </div>
+
     </div>
+
     <div class="test-dots" id="testDots">
       <span class="test-dot active"></span>
       <span class="test-dot"></span>
       <span class="test-dot"></span>
     </div>
+
   </div>
 </section>
 
 <!-- ── CTA STRIP ── -->
 <div class="cta-strip">
   <div class="container">
+
     <h2 data-i18n="cta.title"></h2>
+
     <p data-i18n="cta.sub"></p>
+
     <a href="#contacto" class="btn-white" data-i18n="cta.btn"></a>
+
   </div>
 </div>
 
 <!-- ── CONTACTO ── -->
 <section class="contact" id="contacto">
   <div class="container">
+
     <div class="contact-wrap">
+
       <div>
+
         <div class="section-tag" data-i18n="contact.tag"></div>
+
         <h2 class="section-title" data-i18n="contact.title"></h2>
+
         <p class="section-sub" data-i18n="contact.sub"></p>
+
         <div class="contact-info">
+
           <div class="info-item">
-            <div class="info-icon">📍</div>
-            <div><div class="info-label" data-i18n="contact.locLabel"></div><div class="info-val" data-i18n="contact.locVal"></div></div>
+            <div class="info-icon">
+              <img src="public/images/icons/location.png" alt="Ubicación" class="icon-img">
+            </div>
+            <div>
+              <div class="info-label" data-i18n="contact.locLabel"></div>
+              <div class="info-val" data-i18n="contact.locVal"></div>
+            </div>
           </div>
+
           <div class="info-item">
-            <div class="info-icon">✉️</div>
-            <div><div class="info-label" data-i18n="contact.emailLabel"></div><div class="info-val">hola@veltrix.pe</div></div>
+            <div class="info-icon">
+              <img src="public/images/icons/gmail.png" alt="Email" class="icon-img">
+            </div>
+
+            <div>
+              <div class="info-label" data-i18n="contact.emailLabel"></div>
+              <div class="info-val">hola@veltrix.pe</div>
+            </div>
           </div>
+
           <div class="info-item">
-            <div class="info-icon">📱</div>
-            <div><div class="info-label" data-i18n="contact.waLabel"></div><div class="info-val">+51 999 123 456</div></div>
+            <div class="info-icon">
+              <img src="public/images/icons/whatsapp.png" alt="WhatsApp" class="icon-img">
+            </div>
+
+            <div>
+              <div class="info-label" data-i18n="contact.waLabel"></div>
+              <div class="info-val">+51 999 123 456</div>
+            </div>
           </div>
+
         </div>
       </div>
+
       <div>
+
         <div class="contact-form">
+
           <div class="form-row">
+
             <div class="form-group">
               <label data-i18n="contact.form.name"></label>
               <input type="text" id="fn" data-i18n-placeholder="contact.form.namePh" />
             </div>
+
             <div class="form-group">
               <label data-i18n="contact.form.email"></label>
               <input type="email" id="fe" placeholder="tu@correo.com" />
             </div>
+
           </div>
+
           <div class="form-group">
             <label data-i18n="contact.form.type"></label>
+
             <select id="fs">
               <option value="" data-i18n="contact.form.typeOpt0"></option>
               <option data-i18n="contact.form.typeOpt1"></option>
@@ -261,12 +545,16 @@
               <option data-i18n="contact.form.typeOpt4"></option>
             </select>
           </div>
+
           <div class="form-group">
             <label data-i18n="contact.form.msg"></label>
             <textarea id="fm" data-i18n-placeholder="contact.form.msgPh"></textarea>
           </div>
+
           <button class="submit-btn" onclick="sendForm()" data-i18n="contact.form.submit"></button>
+
           <div class="success-msg" id="smsg" data-i18n="contact.form.success"></div>
+
         </div>
       </div>
     </div>
@@ -276,51 +564,75 @@
 <!-- ── FOOTER ── -->
 <footer>
   <div class="footer-inner">
+
     <div class="footer-top">
+
       <div class="footer-brand">
         <div class="footer-logo"><span>Domo</span>tiCore</div>
+
         <p data-i18n="footer.desc"></p>
+
         <div class="footer-upc" data-i18n="footer.upc"></div>
       </div>
+
       <div class="footer-col">
+
         <h5 data-i18n="footer.col1.title"></h5>
+
         <ul>
-          <li><a href="#funciones"    data-i18n="footer.col1.l1"></a></li>
-          <li><a href="#plataforma"   data-i18n="footer.col1.l2"></a></li>
+          <li><a href="#funciones" data-i18n="footer.col1.l1"></a></li>
+          <li><a href="#plataforma" data-i18n="footer.col1.l2"></a></li>
           <li><a href="#comofunciona" data-i18n="footer.col1.l3"></a></li>
-          <li><a href="#contacto"     data-i18n="footer.col1.l4"></a></li>
+          <li><a href="#contacto" data-i18n="footer.col1.l4"></a></li>
         </ul>
+
       </div>
+
       <div class="footer-col">
+
         <h5 data-i18n="footer.col2.title"></h5>
+
         <ul>
-          <li><a href="#nosotros"   data-i18n="footer.col2.l1"></a></li>
+          <li><a href="#nosotros" data-i18n="footer.col2.l1"></a></li>
           <li><a href="#testimonios" data-i18n="footer.col2.l2"></a></li>
-          <li><a href="#"           data-i18n="footer.col2.l3"></a></li>
-          <li><a href="#"           data-i18n="footer.col2.l4"></a></li>
+          <li><a href="#" data-i18n="footer.col2.l3"></a></li>
+          <li><a href="#" data-i18n="footer.col2.l4"></a></li>
         </ul>
+
       </div>
+
       <div class="footer-col">
+
         <h5 data-i18n="footer.col3.title"></h5>
+
         <ul>
           <li><a href="#" data-i18n="footer.col3.l1"></a></li>
           <li><a href="#" data-i18n="footer.col3.l2"></a></li>
           <li><a href="#" data-i18n="footer.col3.l3"></a></li>
         </ul>
+
       </div>
+
     </div>
+
     <div class="footer-bottom">
+
       <div class="footer-copy" data-i18n="footer.copy"></div>
+
       <div class="footer-socials">
         <a class="social-link" href="#" title="LinkedIn">in</a>
         <a class="social-link" href="#" title="Instagram">ig</a>
         <a class="social-link" href="#" title="GitHub">gh</a>
       </div>
+
     </div>
   </div>
 </footer>
 
-<script src="/public/i18n/i18n.js"></script>
-<script src="/public/js/main.js"></script>
+<script src="public/i18n/es.js"></script>
+<script src="public/i18n/en.js"></script>
+<script src="public/i18n/i18n.js"></script>
+<script type="module" src="public/js/main.js"></script>
+
 </body>
 </html>
