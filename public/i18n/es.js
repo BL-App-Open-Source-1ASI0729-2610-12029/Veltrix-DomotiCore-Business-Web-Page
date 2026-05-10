@@ -1,6 +1,6 @@
 ﻿window.translations = window.translations || {};
 window.translations.es = {
-  nav: { about: "Nosotros", features: "Funciones", platform: "Plataforma", how: "¿Cómo funciona?", contact: "Contacto", cta: "Solicitar demo" },
+  nav: { about: "Nosotros", features: "Funciones", platform: "Plataforma", how: "¿Cómo funciona?", contact: "Contacto", cta: "Solicitar demo", pricing: "Planes" },
   hero: {
     badge: "Tecnología IoT para hogares y PYMES peruanas",
     title: "Controla tu hogar o negocio desde <em>un solo lugar</em>",
@@ -92,4 +92,47 @@ window.translations.es = {
     col2: { title: "Empresa", l1: "Nosotros", l2: "Testimonios", l3: "Blog", l4: "Prensa" },
     col3: { title: "Legal", l1: "Privacidad", l2: "Términos de uso", l3: "Seguridad" },
   },
+
+  pricing: {
+  tag:     "Precios",
+  title:   "Elige tu plan",
+  sub:     "Sin contratos largos. Cambia o cancela cuando quieras.",
+  period:  "/ mes",
+  popular: "Más popular",
+  btnStart:   "Empezar ahora",
+  btnContact: "Contactar ventas",
+  p1: {
+    name: "Básico",
+    desc: "Ideal para hogares pequeños que quieren empezar a automatizar su hogar.",
+    f1: "Hasta 8 dispositivos",
+    f3: "Reportes de consumo enérgético",
+    f4: "Soporte 24/7",
+    f5: "Reportes avanzados",
+    f6: "Integraciones externas",
+    f7: "Encendido/apagado remoto",
+    f8: "Dashboard informativo",
+  },
+  p2: {
+    name: "Negocios",
+    desc: "Para hogares y oficinas que quieren control total de sus dispositivos y monitoreo en tiempo real.",
+    f1: "Todas las funciones del plan Básico",
+    f2: "Hasta 20 dispositivos",
+    f3: "Automatizaciones ilimitadas",
+    f4: "Soporte prioritario 24/7",
+    f5: "Reportes avanzados",
+    f6: "Integraciones externas",
+    f7: "Encendido/apagado remoto",
+  },
+  p3: {
+    name:  "Enterprise",
+    price: "A consultar",
+    desc:  "Para empresas, edificios y proyectos a gran escala.",
+    f1: "Dispositivos ilimitados",
+    f2: "Automatizaciones ilimitadas",
+    f3: "Dashboard personalizado",
+    f4: "SLA garantizado",
+    f5: "Integración con ERP/BMS",
+    f6: "Gerente de cuenta dedicado",
+  },
+},
 };

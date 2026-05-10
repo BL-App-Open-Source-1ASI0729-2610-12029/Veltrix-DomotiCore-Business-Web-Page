@@ -1,6 +1,6 @@
 ﻿window.translations = window.translations || {};
 window.translations.en = {
-  nav: { about: "About", features: "Features", platform: "Platform", how: "How it works", contact: "Contact", cta: "Request demo" },
+  nav: { about: "About", features: "Features", platform: "Platform", how: "How it works", contact: "Contact", cta: "Request demo", pricing: "Pricing" },
   hero: {
     badge: "IoT technology for Peruvian homes & SMBs",
     title: "Control your home or business from <em>one single place</em>",
@@ -92,4 +92,48 @@ window.translations.en = {
     col2: { title: "Company",   l1: "About",      l2: "Testimonials",l3: "Blog",         l4: "Press" },
     col3: { title: "Legal",     l1: "Privacy",    l2: "Terms of use",l3: "Security" },
   },
+
+  pricing: {
+  tag:     "Pricing",
+  title:   "Choose your plan",
+  sub:     "No long-term contracts. Upgrade or cancel anytime.",
+  period:  "/ month",
+  popular: "Most popular",
+  btnStart:   "Get started",
+  btnContact: "Contact sales",
+  p1: {
+    name: "Basic",
+    desc: "Ideal for small homes that want to start automating their space.",
+    f1: "Up to 8 devices",
+    f3: "Energy consumption reports",
+    f4: "24/7 support",
+    f5: "Advanced reports",
+    f6: "External integrations",
+    f7: "Remote on/off control",
+    f8: "Informative dashboard",
+  },
+  p2: {
+    name: "Business",
+    desc: "For homes and offices that want full control of their devices and real-time monitoring.",
+    f1: "All Basic plan features",
+    f2: "Up to 20 devices",
+    f3: "Unlimited automations",
+    f4: "Priority support 24/7",
+    f5: "Advanced reports",
+    f6: "External integrations",
+    f7: "Remote on/off control",
+  },
+  p3: {
+    name:  "Enterprise",
+    price: "Contact us",
+    desc:  "For companies, buildings and large-scale projects.",
+    f1: "Unlimited devices",
+    f2: "Unlimited automations",
+    f3: "Custom dashboard",
+    f4: "Guaranteed SLA",
+    f5: "ERP/BMS integration",
+    f6: "Dedicated account manager",
+  },
+},
+
 };
