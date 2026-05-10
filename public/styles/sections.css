@@ -412,3 +412,15 @@ footer {
     transition: background 0.2s, color 0.2s;
 }
 .social-link:hover { background: rgba(59,130,246,0.25); color: var(--blue-mid); }
+
+.icon-img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+
+.device-icon {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
