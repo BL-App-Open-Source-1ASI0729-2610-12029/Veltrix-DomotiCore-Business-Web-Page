@@ -1,0 +1,39 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root {
+    /* Paleta DomotiCore Style Guidelines */
+    --blue:        #1E40AF;
+    --blue-dark:   #1E3A8A;
+    --blue-light:  #DBEAFE;
+    --blue-mid:    #3B82F6;
+    --blue-pale:   #EFF6FF;
+    --navy:        #0F172A;
+    --gray-dark:   #475569;
+    --gray-mid:    #64748B;
+    --accent:      #882D00;
+    --accent-light:#FEE2D0;
+    --body-bg:     #F8FAFC;
+    --surface:     #FFFFFF;
+    --surface2:    #F1F5F9;
+    --text:        #0F172A;
+    --muted:       #64748B;
+    --border:      #CBD5E1;
+
+    /* Aliases para compatibilidad con el HTML existente */
+    --teal:        var(--blue);
+    --teal-dark:   var(--blue-dark);
+    --teal-light:  var(--blue-light);
+    --teal-mid:    var(--blue-mid);
+    --teal-pale:   var(--blue-pale);
+}
+html { scroll-behavior: smooth; }
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background: var(--body-bg);
+    color: var(--text);
+    overflow-x: hidden;
+    line-height: 1.6;
+}
