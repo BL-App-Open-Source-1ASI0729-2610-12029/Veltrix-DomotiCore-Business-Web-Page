@@ -1,6 +1,6 @@
 ﻿window.translations = window.translations || {};
 window.translations.en = {
-  nav: { about: "About", features: "Features", platform: "Platform", how: "How it works", contact: "Contact", cta: "Request demo", pricing: "Pricing" },
+  nav: { about: "About", features: "Features", platform: "Platform", how: "How it works", contact: "Contact", cta: "Start using", pricing: "Pricing" },
   hero: {
     badge: "IoT technology for Peruvian homes & SMBs",
     title: "Control your home or business from <em>one single place</em>",
@@ -66,7 +66,7 @@ window.translations.en = {
   cta: {
     title: "Ready to automate your space?",
     sub:  "Join the homes and businesses already managing their energy with DomotiCore.",
-    btn:  "Request a free demo →",
+    btn:  "Start using Domoticore →",
   },
   contact: {
     tag: "Contact", title: "Let's talk, no strings attached",

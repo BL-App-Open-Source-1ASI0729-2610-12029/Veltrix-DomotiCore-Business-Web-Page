@@ -1,6 +1,6 @@
 ﻿window.translations = window.translations || {};
 window.translations.es = {
-  nav: { about: "Nosotros", features: "Funciones", platform: "Plataforma", how: "¿Cómo funciona?", contact: "Contacto", cta: "Solicitar demo", pricing: "Planes" },
+  nav: { about: "Nosotros", features: "Funciones", platform: "Plataforma", how: "¿Cómo funciona?", contact: "Contacto", cta: "¡Comienza ya!", pricing: "Planes" },
   hero: {
     badge: "Tecnología IoT para hogares y PYMES peruanas",
     title: "Controla tu hogar o negocio desde <em>un solo lugar</em>",
@@ -66,7 +66,7 @@ window.translations.es = {
   cta: {
     title: "¿Listo para automatizar tu espacio?",
     sub:  "Únete a los hogares y negocios que ya controlan su energía con DomotiCore.",
-    btn:  "Solicitar demo gratuita →",
+    btn:  "Empieza a usar Domoticore →",
   },
   contact: {
     tag: "Contacto", title: "Hablemos sin compromisos",
