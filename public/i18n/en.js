@@ -11,6 +11,27 @@ window.translations.en = {
     stat2: "Real-time control",
     stat3: "Average energy savings",
   },
+
+   team: {
+    title: "Team Members Behind DomotiCore",
+    description: "Meet the team",
+    videoTitle: "Video About the Team",
+    videoDesc: "Soon you will learn more about the team behind DomotiCore.",
+    team1Name: "Cesar Quispe",
+    team2Name: "Alvaro Rocha",
+    team3Name: "Diego Esquicha",
+    team4Name: "Fabrizio Tello",
+    team5Name: "Oscar Checa",
+  },
+
+  member:{
+    team1Role: "CEO & Co-fundador", 
+    team2Role: "Software developer", 
+    team3Role: "Backend developer", 
+    team4Role: "Frontend developer", 
+    team5Role: "UX/UI Designer",
+  },
+
   about: {
     tag:   "About Veltrix",
     title: "Built by Peruvian students with a global vision",
