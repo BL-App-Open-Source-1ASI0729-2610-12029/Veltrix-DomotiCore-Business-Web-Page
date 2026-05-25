@@ -11,27 +11,36 @@
 
 <!-- ── NAVEGACIÓN ── -->
 <nav>
-  <div class="logo"><span>Domo</span>tiCore</div>
-  <ul class="nav-links" id="navLinks">
-    <li><a href="#nosotros" data-i18n="nav.about"></a></li>
-    <li><a href="#funciones" data-i18n="nav.features"></a></li>
-    <li><a href="#plataforma" data-i18n="nav.platform"></a></li>
-    <li><a href="#planes" data-i18n="nav.pricing"></a></li>
-    <li><a href="#comofunciona" data-i18n="nav.how"></a></li>
-    <li><a href="#contacto" data-i18n="nav.contact"></a></li>
-  </ul>
+  <div class="container nav-container">
+    <div class="logo"><span>Domo</span>tiCore</div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#nosotros" data-i18n="nav.about"></a></li>
+      <li><a href="#funciones" data-i18n="nav.features"></a></li>
+      <li><a href="#plataforma" data-i18n="nav.platform"></a></li>
+      <li><a href="#planes" data-i18n="nav.pricing"></a></li>
+      <li><a href="#comofunciona" data-i18n="nav.how"></a></li>
+      <li><a href="#contacto" data-i18n="nav.contact"></a></li>
+    </ul>
 
-  <div class="nav-right">
+    <div class="nav-right">
+      <div class="nav-tools">
     <button onclick="toggleTheme()" class="theme-toggle" aria-label="Toggle Night Mode">
-      <span data-i18n="nav.nightMode"></span>
+          <span data-i18n="nav.nightMode"></span>
     </button>
 
-    <div class="lang-switcher">
-      <button class="lang-btn active" data-lang="es" title="Español">ES</button>
-      <button class="lang-btn" data-lang="en" title="English">EN</button>
+    <div class="lang-dropdown" id="langDropdown">
+      <button class="lang-trigger" id="langTrigger" aria-label="Select Language">
+        <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+      </button>
+      <div class="lang-menu">
+        <button class="lang-btn" data-lang="es">Español (ES)</button>
+        <button class="lang-btn" data-lang="en">English (EN)</button>
+      </div>
     </div>
+      </div>
 
     <a href="https://veltrix-domoti-core-front-end-lvgz-87cyqr01w-veltrix-domoticore.vercel.app/dashboard" target="_blank" class="nav-cta" data-i18n="nav.cta"></a>
+  </div>
   </div>
 
   <button class="hamburger" id="hamburger" aria-label="Menú">
@@ -47,32 +56,32 @@
   <div class="hero-blob"></div>
   <div class="hero-blob2"></div>
 
-  <div class="badge">
+  <div class="badge reveal-bottom">
     <div class="badge-dot"></div>
     <span data-i18n="hero.badge"></span>
   </div>
 
-  <h1 data-i18n-html="hero.title"></h1>
+  <h1 data-i18n-html="hero.title" class="reveal-bottom"></h1>
 
-  <p class="hero-sub" data-i18n="hero.sub"></p>
+  <p class="hero-sub reveal-bottom" data-i18n="hero.sub" style="transition-delay: 0.1s;"></p>
 
-  <div class="hero-btns">
+  <div class="hero-btns reveal-bottom" style="transition-delay: 0.2s;">
     <a href="#plataforma" class="btn-primary" data-i18n="hero.btnPrimary"></a>
     <a href="#comofunciona" class="btn-ghost" data-i18n="hero.btnGhost"></a>
   </div>
 
-  <div class="hero-stats">
-    <div>
+  <div class="hero-stats reveal-bottom" style="transition-delay: 0.3s;">
+    <div class="stat-card">
       <div class="stat-num">50+</div>
       <div class="stat-lbl" data-i18n="hero.stat1"></div>
     </div>
 
-    <div>
+    <div class="stat-card">
       <div class="stat-num">100%</div>
       <div class="stat-lbl" data-i18n="hero.stat2"></div>
     </div>
 
-    <div>
+    <div class="stat-card">
       <div class="stat-num">30%</div>
       <div class="stat-lbl" data-i18n="hero.stat3"></div>
     </div>
@@ -85,7 +94,7 @@
 
     <div class="about-grid">
 
-      <div class="about-text">
+      <div class="about-text reveal-left">
         <div class="section-tag" data-i18n="about.tag"></div>
 
         <h2 class="section-title" data-i18n="about.title"></h2>
@@ -99,9 +108,9 @@
 
       <div class="about-cards">
 
-        <div class="about-card">
+        <div class="about-card reveal-right">
           <div class="about-icon">
-            <img src="/public/images/icons/objetcive.png" alt="Objetivo" class="icon-img">
+            <img src="public/images/icons/objetcive.png" alt="Objetivo" class="icon-img">
           </div>
 
           <div>
@@ -110,7 +119,7 @@
           </div>
         </div>
 
-        <div class="about-card">
+        <div class="about-card reveal-right">
           <div class="about-icon">
             <img src="public/images/icons/innovation.png" alt="Innovación" class="icon-img">
           </div>
@@ -121,11 +130,10 @@
           </div>
         </div>
 
-        <div class="about-card">
+        <div class="about-card reveal-right">
           <div class="about-icon">
             <img src="public/images/icons/sustainability.png" alt="Sostenibilidad" class="icon-img">
           </div>
-
           <div>
             <h4 data-i18n="about.card3.title"></h4>
             <p data-i18n="about.card3.text"></p>
@@ -137,9 +145,8 @@
   </div>
 
   <div class="container">
-    <div class="about-us">
+    <div class="about-us reveal-bottom">
       <h3 data-i18n="about.teamTitle"></h3>
-
       <p data-i18n="about.teamText"></p>
     </div>
   </div>
@@ -147,38 +154,65 @@
 </section>
 
 <section class="team" id="team">
-  <p class="team-description" data-i18n="team.description"></p>
-  <h2 class="team-title" data-i18n="team.title"></h2>
-  <div class="container-team">
+  <div class="container">
+    <p class="section-tag" data-i18n="team.description"></p>
+    <h2 class="section-title" data-i18n="team.title"></h2>
+    
+    <div class="container-team">
     
     <div class="team-grid">
 
       <div class="team-member">
-        <img src="public/images/about-the-team/cesar.jpeg" alt="Cesar Quispe Team Image" class="team-photo">
+        <div class="team-photo-wrap">
+          <img src="public/images/about-the-team/cesar.jpeg" alt="Cesar Quispe Team Image" class="team-photo">
+          <div class="team-socials">
+            <a href="#" class="t-soc">in</a>
+          </div>
+        </div>
         <h4 class="team-name" data-i18n="team.team1Name"></h4>
         <p class="team-role" data-i18n="member.team1Role"></p>
       </div>
 
       <div class="team-member">
-        <img src="public/images/about-the-team/alvaro.png" alt="Alvaro Rocha Team Image" class="team-photo">
+        <div class="team-photo-wrap">
+          <img src="public/images/about-the-team/alvaro.png" alt="Alvaro Rocha Team Image" class="team-photo">
+          <div class="team-socials">
+            <a href="#" class="t-soc">in</a>
+          </div>
+        </div>
         <h4 class="team-name" data-i18n="team.team2Name"></h4>
         <p class="team-role" data-i18n="member.team2Role"></p>
       </div>
 
       <div class="team-member">
-        <img src="public/images/about-the-team/diego.jpeg" alt="Diego Team Image" class="team-photo">
+        <div class="team-photo-wrap">
+          <img src="public/images/about-the-team/diego.jpeg" alt="Diego Team Image" class="team-photo">
+          <div class="team-socials">
+            <a href="#" class="t-soc">in</a>
+          </div>
+        </div>
         <h4 class="team-name" data-i18n="team.team3Name"></h4>
         <p class="team-role" data-i18n="member.team3Role"></p>
       </div>
 
       <div class="team-member">
-        <img src="public/images/about-the-team/Fabrizio (1).png" alt="Fabrizio Team Image" class="team-photo">
+        <div class="team-photo-wrap">
+          <img src="public/images/about-the-team/Fabrizio (1).png" alt="Fabrizio Team Image" class="team-photo">
+          <div class="team-socials">
+            <a href="#" class="t-soc">in</a>
+          </div>
+        </div>
         <h4 class="team-name" data-i18n="team.team4Name"></h4>
         <p class="team-role" data-i18n="member.team4Role"></p>
       </div>
 
       <div class="team-member">
-        <img src="public/images/about-the-team/oscar.png" alt="OscarTeam Image" class="team-photo">
+        <div class="team-photo-wrap">
+          <img src="public/images/about-the-team/oscar.png" alt="OscarTeam Image" class="team-photo">
+          <div class="team-socials">
+            <a href="#" class="t-soc">in</a>
+          </div>
+        </div>
         <h4 class="team-name" data-i18n="team.team5Name"></h4>
         <p class="team-role" data-i18n="member.team5Role"></p>
       </div>
@@ -616,9 +650,9 @@
 
     <div class="contact-wrap">
 
-      <div>
+      <div class="reveal-left">
 
-        <div class="section-tag" data-i18n="contact.tag"></div>
+        <div class="section-tag" data-i18n="contact.tag" style="margin-bottom: 1rem;"></div>
 
         <h2 class="section-title" data-i18n="contact.title"></h2>
 
@@ -661,7 +695,7 @@
         </div>
       </div>
 
-      <div>
+      <div class="reveal-right">
 
         <div class="contact-form">
 

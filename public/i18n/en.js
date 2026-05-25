@@ -1,4 +1,4 @@
-﻿﻿window.translations = window.translations || {};
+﻿﻿﻿﻿window.translations = window.translations || {};
 window.translations.en = {
   nav: { about: "About", features: "Features", platform: "Platform", how: "How it works", contact: "Contact", cta: "Start using", pricing: "Pricing", nightMode: "Night Mode" },
   hero: {
@@ -41,6 +41,8 @@ window.translations.en = {
     card1: { title: "Our mission",         text: "Democratize home automation for households and small businesses across Peru and Latin America." },
     card2: { title: "Local innovation",    text: "Solutions built for the Peruvian reality, accessible without any technical knowledge required." },
     card3: { title: "Sustainable impact",  text: "We reduce unnecessary energy consumption by promoting efficient and automated habits." },
+    teamTitle: "Technology with Purpose",
+    teamText: "At Veltrix, we don't just build software; we create bridges between people and their environment. Our vision is to lead the change towards smarter cities and more efficient homes throughout the region.",
   },
   features: {
     tag:  "Features",
@@ -63,10 +65,14 @@ window.translations.en = {
     automations: "Automations", analysis: "Analytics", energy: "Energy",
     alerts: "Alerts", reports: "Reports", config: "Settings", users: "Users",
     card1: { lbl: "Active devices" }, card2: { lbl: "Offline" },
-    card3: { lbl: "Total consumption" }, card4: { lbl: "Active alerts" },
+    card3: { lbl: "Daily usage" }, card4: { lbl: "Active alerts" },
     dev1: "Living room lights", dev2: "Office computer",
     dev3: "Air conditioning", dev4: "Hallway lights",
     online: "Online", offline: "Offline",
+    scenes: "Quick Scenes",
+    scene1: "Night Mode",
+    scene2: "Away Mode",
+    climate: "Indoor Climate",
   },
   how: {
     tag:  "Process",

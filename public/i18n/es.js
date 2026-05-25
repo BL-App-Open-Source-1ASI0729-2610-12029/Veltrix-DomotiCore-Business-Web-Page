@@ -1,4 +1,4 @@
-﻿window.translations = window.translations || {};
+﻿﻿window.translations = window.translations || {};
 window.translations.es = {
   nav: { about: "Nosotros", features: "Funciones", platform: "Plataforma", how: "¿Cómo funciona?", contact: "Contacto", cta: "¡Comienza ya!", pricing: "Planes", nightMode: "Modo Nocturno" },
   hero: {
@@ -40,6 +40,8 @@ window.translations.es = {
     card1: { title: "Nuestra misión",    text: "Democratizar la domótica para hogares y pequeñas empresas en Perú y Latinoamérica." },
     card2: { title: "Innovación local",  text: "Soluciones pensadas para la realidad peruana, accesibles y sin necesidad de conocimientos técnicos." },
     card3: { title: "Impacto sostenible", text: "Reducimos el consumo energético innecesario promoviendo hábitos eficientes y automatizados." },
+    teamTitle: "Tecnología con Propósito",
+    teamText: "En Veltrix, no solo construimos software; creamos puentes entre las personas y su entorno. Nuestra visión es liderar el cambio hacia ciudades más inteligentes y hogares más eficientes en toda la región.",
   },
   features: {
     tag:  "Funcionalidades",
@@ -62,10 +64,14 @@ window.translations.es = {
     automations: "Automations", analysis: "Análisis", energy: "Energía",
     alerts: "Alertas", reports: "Reportes", config: "Config.", users: "Usuarios",
     card1: { lbl: "Dispositivos activos" }, card2: { lbl: "Apagados" },
-    card3: { lbl: "Consumo total" }, card4: { lbl: "Alertas activas" },
+    card3: { lbl: "Consumo hoy" }, card4: { lbl: "Alertas activas" },
     dev1: "Sala principal", dev2: "Computadora oficina",
     dev3: "Aire acondicionado", dev4: "Pasillo",
     online: "Online", offline: "Offline",
+    scenes: "Escenas Rápidas",
+    scene1: "Modo Noche",
+    scene2: "Fuera de Casa",
+    climate: "Clima Interior",
   },
   how: {
     tag:  "Proceso",

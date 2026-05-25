@@ -3,30 +3,32 @@ let currentLang = localStorage.getItem('dc_lang') || 'es';
 let currentTheme = localStorage.getItem('dc_theme') || 'light';
 
 function t(key) {
-  return key.split('.').reduce((o, k) => (o && o[k] !== undefined ? o[k] : null), translations[currentLang]);
+  const langData = translations[currentLang] || translations['es'] || {};
+  return key.split('.').reduce((o, k) => (o && o[k] !== undefined ? o[k] : null), langData);
 }
 
 function applyTranslations() {
   document.documentElement.lang = currentLang;
 
-  document.querySelectorAll('[data-i18n]').forEach(el => {
-    const val = t(el.dataset.i18n);
-    if (val !== null) el.textContent = val;
+  const mapping = [
+    { attr: 'data-i18n', prop: 'textContent' },
+    { attr: 'data-i18n-html', prop: 'innerHTML' },
+    { attr: 'data-i18n-placeholder', prop: 'placeholder' },
+    { attr: 'data-i18n-title', prop: 'title' },
+    { attr: 'data-i18n-src', prop: 'src' }
+  ];
+
+  mapping.forEach(({ attr, prop }) => {
+    document.querySelectorAll(`[${attr}]`).forEach(el => {
+      const val = t(el.getAttribute(attr));
+      if (val !== null) el[prop] = val;
+    });
   });
 
-  document.querySelectorAll('[data-i18n-html]').forEach(el => {
-    const val = t(el.dataset.i18nHtml);
-    if (val !== null) el.innerHTML = val;
-  });
-
-  document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
-    const val = t(el.dataset.i18nPlaceholder);
-    if (val !== null) el.placeholder = val;
-  });
-
-  document.querySelectorAll('select option[data-i18n]').forEach(opt => {
-    const val = t(opt.dataset.i18n);
-    if (val !== null) opt.textContent = val;
+  // Soporte para accesibilidad (aria-label)
+  document.querySelectorAll('[data-i18n-aria]').forEach(el => {
+    const val = t(el.dataset.i18nAria);
+    if (val !== null) el.setAttribute('aria-label', val);
   });
 
   document.querySelectorAll('.lang-btn').forEach(btn => {
