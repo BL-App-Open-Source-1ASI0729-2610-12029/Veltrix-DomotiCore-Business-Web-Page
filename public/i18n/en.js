@@ -1,6 +1,6 @@
-﻿window.translations = window.translations || {};
+﻿﻿window.translations = window.translations || {};
 window.translations.en = {
-  nav: { about: "About", features: "Features", platform: "Platform", how: "How it works", contact: "Contact", cta: "Start using", pricing: "Pricing" },
+  nav: { about: "About", features: "Features", platform: "Platform", how: "How it works", contact: "Contact", cta: "Start using", pricing: "Pricing", nightMode: "Night Mode" },
   hero: {
     badge: "IoT technology for Peruvian homes & SMBs",
     title: "Control your home or business from <em>one single place</em>",

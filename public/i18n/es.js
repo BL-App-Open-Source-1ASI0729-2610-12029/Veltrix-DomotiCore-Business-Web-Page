@@ -1,6 +1,6 @@
 ﻿window.translations = window.translations || {};
 window.translations.es = {
-  nav: { about: "Nosotros", features: "Funciones", platform: "Plataforma", how: "¿Cómo funciona?", contact: "Contacto", cta: "¡Comienza ya!", pricing: "Planes" },
+  nav: { about: "Nosotros", features: "Funciones", platform: "Plataforma", how: "¿Cómo funciona?", contact: "Contacto", cta: "¡Comienza ya!", pricing: "Planes", nightMode: "Modo Nocturno" },
   hero: {
     badge: "Tecnología IoT para hogares y PYMES peruanas",
     title: "Controla tu hogar o negocio desde <em>un solo lugar</em>",

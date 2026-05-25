@@ -1,5 +1,6 @@
 const translations = window.translations || {};
 let currentLang = localStorage.getItem('dc_lang') || 'es';
+let currentTheme = localStorage.getItem('dc_theme') || 'light';
 
 function t(key) {
   return key.split('.').reduce((o, k) => (o && o[k] !== undefined ? o[k] : null), translations[currentLang]);
@@ -34,20 +35,41 @@ function applyTranslations() {
 }
 
 function setLang(lang) {
-  if (!translations[lang]) return;
-  currentLang = lang;
-  localStorage.setItem('dc_lang', lang);
-  applyTranslations();
+  if (!translations[lang] || lang === currentLang) return;
+  
+  // Agregamos una clase para desvanecer el texto antes del cambio
+  document.body.classList.add('lang-changing');
+  
+  setTimeout(() => {
+    currentLang = lang;
+    localStorage.setItem('dc_lang', lang);
+    applyTranslations();
+    
+    // Quitamos la clase para que el nuevo texto aparezca suavemente
+    document.body.classList.remove('lang-changing');
+  }, 200);
+}
+
+function applyTheme() {
+  document.documentElement.setAttribute('data-theme', currentTheme);
+}
+
+function toggleTheme() {
+  currentTheme = currentTheme === 'light' ? 'dark' : 'light';
+  localStorage.setItem('dc_theme', currentTheme);
+  applyTheme();
 }
 
 window.t = t;
 window.applyTranslations = applyTranslations;
 window.setLang = setLang;
+window.toggleTheme = toggleTheme;
 
 window.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('.lang-btn').forEach(btn => {
     btn.addEventListener('click', () => setLang(btn.dataset.lang));
   });
 
+  applyTheme();
   applyTranslations();
 });

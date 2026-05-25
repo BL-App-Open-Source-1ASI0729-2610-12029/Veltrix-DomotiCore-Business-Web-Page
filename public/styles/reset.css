@@ -28,7 +28,26 @@
     --teal-light:  var(--blue-light);
     --teal-mid:    var(--blue-mid);
     --teal-pale:   var(--blue-pale);
+    --nav-bg:      rgba(248, 250, 252, 0.94);
+    --hero-bg:     linear-gradient(170deg, #EFF6FF 0%, #F8FAFC 60%, #FFFFFF 100%);
+    --footer-bg:   var(--navy);
 }
+
+/* Modo Nocturno */
+[data-theme="dark"] {
+    --body-bg:     #0F172A; /* Navy */
+    --surface:     #1E293B; /* Slate 800 */
+    --surface2:    #334155; /* Slate 700 */
+    --text:        #F8FAFC; /* Slate 50 */
+    --muted:       #94A3B8; /* Slate 400 */
+    --border:      #334155;
+    --blue-pale:   #1E3A8A; /* Azul oscuro para fondos sutiles */
+    --navy:        #F8FAFC; /* Cambia a blanco/gris claro para legibilidad */
+    --nav-bg:      rgba(15, 23, 42, 0.94); /* Fondo oscuro semi-transparente */
+    --hero-bg:     #0F172A;
+    --footer-bg:   #020617;
+}
+
 html { scroll-behavior: smooth; }
 body {
     font-family: 'Plus Jakarta Sans', sans-serif;
@@ -36,4 +55,20 @@ body {
     color: var(--text);
     overflow-x: hidden;
     line-height: 1.6;
+}
+
+/* Transición suave para el cambio de modo nocturno y lenguaje */
+body, nav, section, footer, div, h1, h2, h3, h4, h5, p, a, span, button, input, textarea, select {
+    transition: background-color 0.3s ease, 
+                color 0.3s ease, 
+                border-color 0.3s ease, 
+                box-shadow 0.3s ease,
+                opacity 0.2s ease;
+}
+
+/* Efecto de desvanecimiento para el cambio de idioma */
+.lang-changing [data-i18n],
+.lang-changing [data-i18n-html],
+.lang-changing [data-i18n-placeholder] {
+    opacity: 0;
 }
