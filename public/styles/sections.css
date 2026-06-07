@@ -1,4 +1,4 @@
-/* ── HERO REFINADO ── */
+/*hero estilizado */
 .hero {
     padding: 12rem 0 8rem;
     text-align: center;
@@ -511,7 +511,6 @@
     box-shadow: 0 10px 25px rgba(30, 64, 175, 0.2);
 }
 
-/* Contenedor de texto con transición de altura y opacidad */
 .step h4, .step p { 
     opacity: 0;
     transform: translateY(10px);
@@ -1173,8 +1172,37 @@ footer {
     text-align: center;
 }
 
+/* Seccion Team */
 
+.t-soc{
+    text-decoration: none;
+    color: var(--blue);
+}
 
+.team-socials{
+    display: flex;
+    gap: 0.8rem;
+    margin-top: 0.5rem;
+    justify-content: center;
+    background: rgba(59, 86, 210, 0.08);
+    transition: background 0.3s ease;
+    height: auto;
+    width: 32px;
+    border-radius: 5px;
+}
+
+.team-socials:hover{
+    background: rgba(59, 86, 210, 0.18);
+}
+
+.team-photo-wrap{
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.7rem;
+}
 
 
 @media (max-width: 768px){
@@ -1193,14 +1221,82 @@ footer {
         height: 70px;
         font-size: 1.6rem;
     }
+
+    .container-team{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .team-grid{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+
+    .team-member{
+        text-align: center;
+    }
+
+    .team-photo-wrap{
+        display: flex;
+        justify-content: center;
+        width: 80%;
+        align-items: center;
+        flex-direction: column;
+        gap: 0.7rem;
+    }
+
+    .team-photo{
+        width: 100%;
+        max-width: 160px;
+        height: auto;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .team-name{
+        font-size: 1rem;
+    }
+
+    .team-role{
+        font-size: 0.9rem;
+    }
+
+    .video-team{
+        width: 100%;
+    }
+
+    .videoTitle{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .team-video-placeholder{
+        width: 85%;
+        height: 300px;
+        border-radius: 16px;
+    }
+
+    .video-description{
+        font-size: 0.95rem;
+        padding: 0 1rem;
+        text-align: center;
+    }
+
+    .play-button{
+        width: 70px;
+        height: 70px;
+        font-size: 1.6rem;
+    }
 }
 /* Responsive */
-@media (max-width: 900px) {
+@media (max-width: 768px) {
   .pricing-grid { grid-template-columns: 1fr; max-width: 420px; margin-left: auto; margin-right: auto; }
   .plan-featured { transform: scale(1); }
   .plan-featured:hover { transform: translateY(-4px); }
 }
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .pricing-grid { max-width: 100%; }
   .plan-card { padding: 1.6rem 1.4rem; }
 }
