@@ -73,7 +73,7 @@ DomotiCore es una solución IoT que centraliza, automatiza y monitorea dispositi
 ## Estructura del Proyecto
 
 ```
-Veltrix-DomotiCore-Business-Web-Page/
+Web-page/
 ├── index.html                 # Estructura principal del landing
 ├── Readme.md                  # Este archivo
 │

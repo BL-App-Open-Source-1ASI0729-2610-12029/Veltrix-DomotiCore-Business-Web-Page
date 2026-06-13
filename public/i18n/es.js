@@ -1,6 +1,6 @@
-﻿window.translations = window.translations || {};
+﻿﻿window.translations = window.translations || {};
 window.translations.es = {
-  nav: { about: "Nosotros", features: "Funciones", platform: "Plataforma", how: "¿Cómo funciona?", contact: "Contacto", cta: "Solicitar demo" },
+  nav: { about: "Nosotros", features: "Funciones", platform: "Plataforma", how: "¿Cómo funciona?", contact: "Contacto", cta: "¡Comienza ya!", pricing: "Planes", nightMode: "Modo Nocturno" },
   hero: {
     badge: "Tecnología IoT para hogares y PYMES peruanas",
     title: "Controla tu hogar o negocio desde <em>un solo lugar</em>",
@@ -11,6 +11,26 @@ window.translations.es = {
     stat2: "Control en tiempo real",
     stat3: "Ahorro energético promedio",
   },
+
+  team: {
+    title: "Miembros del equipo detrás de DomotiCore",
+    description: "Miembros del equipo",
+    videoTitle: "Video About the Team",
+    videoDesc: "Próximamente conocerás más sobre el equipo detrás de DomotiCore.",
+    team1Name: "Cesar Quispe",
+    team2Name: "Alvaro Rocha",
+    team3Name: "Diego Esquicha",
+    team4Name: "Fabrizio Tello",
+    team5Name: "Oscar Checa",
+  },
+
+  member:{
+    team1Role: "CEO & Co-fundador", 
+    team2Role: "Software developer", 
+    team3Role: "Desarrollador Backend", 
+    team4Role: "Desarrollador Frontend", 
+    team5Role: "Diseñador UX/UI",
+  },
   about: {
     tag:   "Sobre Veltrix",
     title: "Creado por estudiantes peruanos con visión global",
@@ -20,6 +40,8 @@ window.translations.es = {
     card1: { title: "Nuestra misión",    text: "Democratizar la domótica para hogares y pequeñas empresas en Perú y Latinoamérica." },
     card2: { title: "Innovación local",  text: "Soluciones pensadas para la realidad peruana, accesibles y sin necesidad de conocimientos técnicos." },
     card3: { title: "Impacto sostenible", text: "Reducimos el consumo energético innecesario promoviendo hábitos eficientes y automatizados." },
+    teamTitle: "Tecnología con Propósito",
+    teamText: "En Veltrix, no solo construimos software; creamos puentes entre las personas y su entorno. Nuestra visión es liderar el cambio hacia ciudades más inteligentes y hogares más eficientes en toda la región.",
   },
   features: {
     tag:  "Funcionalidades",
@@ -42,10 +64,14 @@ window.translations.es = {
     automations: "Automations", analysis: "Análisis", energy: "Energía",
     alerts: "Alertas", reports: "Reportes", config: "Config.", users: "Usuarios",
     card1: { lbl: "Dispositivos activos" }, card2: { lbl: "Apagados" },
-    card3: { lbl: "Consumo total" }, card4: { lbl: "Alertas activas" },
+    card3: { lbl: "Consumo hoy" }, card4: { lbl: "Alertas activas" },
     dev1: "Sala principal", dev2: "Computadora oficina",
     dev3: "Aire acondicionado", dev4: "Pasillo",
     online: "Online", offline: "Offline",
+    scenes: "Escenas Rápidas",
+    scene1: "Modo Noche",
+    scene2: "Fuera de Casa",
+    climate: "Clima Interior",
   },
   how: {
     tag:  "Proceso",
@@ -66,7 +92,7 @@ window.translations.es = {
   cta: {
     title: "¿Listo para automatizar tu espacio?",
     sub:  "Únete a los hogares y negocios que ya controlan su energía con DomotiCore.",
-    btn:  "Solicitar demo gratuita →",
+    btn:  "Empieza a usar Domoticore →",
   },
   contact: {
     tag: "Contacto", title: "Hablemos sin compromisos",
@@ -92,4 +118,47 @@ window.translations.es = {
     col2: { title: "Empresa", l1: "Nosotros", l2: "Testimonios", l3: "Blog", l4: "Prensa" },
     col3: { title: "Legal", l1: "Privacidad", l2: "Términos de uso", l3: "Seguridad" },
   },
+
+  pricing: {
+  tag:     "Precios",
+  title:   "Elige tu plan",
+  sub:     "Sin contratos largos. Cambia o cancela cuando quieras.",
+  period:  "/ mes",
+  popular: "Más popular",
+  btnStart:   "Empezar ahora",
+  btnContact: "Contactar ventas",
+  p1: {
+    name: "Básico",
+    desc: "Ideal para hogares pequeños que quieren empezar a automatizar su hogar.",
+    f1: "Hasta 8 dispositivos",
+    f3: "Reportes de consumo enérgético",
+    f4: "Soporte 24/7",
+    f5: "Reportes avanzados",
+    f6: "Integraciones externas",
+    f7: "Encendido/apagado remoto",
+    f8: "Dashboard informativo",
+  },
+  p2: {
+    name: "Negocios",
+    desc: "Para hogares y oficinas que quieren control total de sus dispositivos y monitoreo en tiempo real.",
+    f1: "Todas las funciones del plan Básico",
+    f2: "Hasta 20 dispositivos",
+    f3: "Automatizaciones ilimitadas",
+    f4: "Soporte prioritario 24/7",
+    f5: "Reportes avanzados",
+    f6: "Integraciones externas",
+    f7: "Encendido/apagado remoto",
+  },
+  p3: {
+    name:  "Enterprise",
+    price: "A consultar",
+    desc:  "Para empresas, edificios y proyectos a gran escala.",
+    f1: "Dispositivos ilimitados",
+    f2: "Automatizaciones ilimitadas",
+    f3: "Dashboard personalizado",
+    f4: "SLA garantizado",
+    f5: "Integración con ERP/BMS",
+    f6: "Gerente de cuenta dedicado",
+  },
+},
 };
