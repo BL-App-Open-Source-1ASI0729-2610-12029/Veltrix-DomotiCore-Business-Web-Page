@@ -20,10 +20,20 @@
 
 .hero h1 em {
     font-style: normal;
+    color: var(--blue);
     background: linear-gradient(90deg, var(--blue), var(--blue-mid));
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     position: relative;
+}
+
+@supports not (background-clip: text) {
+    .hero h1 em {
+        -webkit-text-fill-color: currentColor;
+        color: var(--blue);
+        background: none;
+    }
 }
 
 .hero-sub {
@@ -103,10 +113,29 @@
     box-shadow: inset 0 50px 100px rgba(15, 23, 42, 0.01), inset 0 -50px 100px rgba(15, 23, 42, 0.01);
 }
 
-/* Estados iniciales para la animación de revelado */
-.reveal-left { opacity: 0; transform: translateX(-40px); transition: all 1s cubic-bezier(0.16, 1, 0.3, 1); }
-.reveal-right { opacity: 0; transform: translateX(40px); transition: all 1s cubic-bezier(0.16, 1, 0.3, 1); }
-.reveal-bottom { opacity: 0; transform: translateY(40px); transition: all 1s cubic-bezier(0.16, 1, 0.3, 1); }
+/* Animación de revelado: visible por defecto, oculto solo con JS activo */
+.reveal-left,
+.reveal-right,
+.reveal-bottom {
+    opacity: 1;
+    transform: none;
+}
+
+html.js .reveal-left:not(.reveal-visible) {
+    opacity: 0;
+    transform: translateX(-40px);
+    transition: all 1s cubic-bezier(0.16, 1, 0.3, 1);
+}
+html.js .reveal-right:not(.reveal-visible) {
+    opacity: 0;
+    transform: translateX(40px);
+    transition: all 1s cubic-bezier(0.16, 1, 0.3, 1);
+}
+html.js .reveal-bottom:not(.reveal-visible) {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 1s cubic-bezier(0.16, 1, 0.3, 1);
+}
 
 .reveal-visible { opacity: 1; transform: translate(0); }
 

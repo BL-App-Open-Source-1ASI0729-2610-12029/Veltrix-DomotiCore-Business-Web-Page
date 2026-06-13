@@ -1,3 +1,31 @@
+(function initReveal() {
+    const revealOptions = {
+        threshold: 0.15,
+        rootMargin: "0px 0px -50px 0px"
+    };
+
+    const revealEls = document.querySelectorAll('.reveal-left, .reveal-right, .reveal-bottom');
+    if (!revealEls.length) return;
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('reveal-visible');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, revealOptions);
+
+    revealEls.forEach(el => {
+        const rect = el.getBoundingClientRect();
+        if (rect.top < window.innerHeight && rect.bottom > 0) {
+            el.classList.add('reveal-visible');
+        } else {
+            observer.observe(el);
+        }
+    });
+})();
+
 document.addEventListener('DOMContentLoaded', () => {
     const steps = document.querySelectorAll('.step');
 
@@ -19,23 +47,6 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
     }
-
-    // Sistema de Scroll Reveal profesional
-    const revealOptions = {
-        threshold: 0.15,
-        rootMargin: "0px 0px -50px 0px"
-    };
-
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('reveal-visible');
-                observer.unobserve(entry.target); // Animación solo una vez
-            }
-        });
-    }, revealOptions);
-
-    document.querySelectorAll('.reveal-left, .reveal-right, .reveal-bottom').forEach(el => observer.observe(el));
 
     // Lógica del Dropdown de Idiomas
     const langTrigger = document.getElementById('langTrigger');
